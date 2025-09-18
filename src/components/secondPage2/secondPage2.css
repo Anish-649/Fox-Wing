@@ -2,6 +2,7 @@
     height:145vh;
     width:100%;
     background: #010101;
+    border-bottom: 1px solid red;
 }
 .secondPage2-title{
     color: #aaa;

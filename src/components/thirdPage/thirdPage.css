@@ -1,0 +1,68 @@
+.thirdPage{
+    width:100%;
+    height: 95vh;
+    background: black;
+   
+}
+.thirdPage-title{
+    color: #aaa;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+      font-size: 1rem;
+    line-height: 2.7rem;
+    margin-bottom: 0rem;
+}
+.thirdPage-title h1{
+    font-family: "Roboto Slab",serif;
+   font-weight: 450;
+   letter-spacing: 0.1rem;
+}
+.thirdPage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem; /* space between rows */
+}
+
+.row {
+  display: flex;
+  gap: 3rem; /* space between boxes */
+  justify-content: center;
+}
+.mediaBox{
+    width:13rem;
+    height:10.3rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+.thirdPage-btn{
+    text-align: center;
+    margin-top: 3rem;
+
+}
+.gradient-btn {
+
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 50px; /* pill shape */
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ffffffcc; /* slightly transparent white */
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  background: black; /* button background */
+
+  /* Gradient border effect */
+  border: 2px solid transparent;
+  background-image: linear-gradient(black, black),
+                    linear-gradient(180deg, #ff5f6d, #a54fff,rgb(38, 8, 38));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  /* Subtle inner shadow for glow */
+
+}
+

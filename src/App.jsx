@@ -7,6 +7,7 @@ import Hero from './components/heroPage/Hero'
 import SecondPage from './components/secondPage/SecondPage'
 import SecondPage2 from './components/secondPage2/SecondPage2'
 import CurveLine from './components/curveLine/CurveLine'
+import ThirdPage from './components/thirdPage/ThirdPage'
 
 function App() {
  
@@ -16,7 +17,7 @@ function App() {
       <Hero/>
       <SecondPage/>
       <SecondPage2/>
-    
+      <ThirdPage/>
     </div>
   )
 }
