@@ -1,5 +1,5 @@
 import "./logoSlider.css"
-import CompanySlide from "../companySlide/companySlide";
+import CompanySlide from "../companySlide/CompanySlide";
 
 const LogoSlider = ({ width = 100, height = 50, reverse = false }) => {
   const companies = [
