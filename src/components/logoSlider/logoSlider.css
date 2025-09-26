@@ -1,0 +1,19 @@
+.slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            transparent,
+            #000 10% 90%,
+            transparent);
+    position: relative;
+    margin: 30px 0;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+    height: var(--height);
+}
