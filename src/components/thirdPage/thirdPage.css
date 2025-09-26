@@ -9,7 +9,7 @@
     margin-top: 2rem;
     text-align: center;
     padding-top: 2rem;
-      font-size: 1rem;
+      font-size: 2.3rem;
     line-height: 2.7rem;
     margin-bottom: 0rem;
 }
@@ -35,7 +35,34 @@
     height:10.3rem;
     border-radius: 1rem;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.menafn{
+   width:90%;
+  height:80%;
+}
+.midday{
+ 
+  height:80%;
+}
+.josh-talk{
+
+  height:50%;
+}
+.outlook{
+  height:30%;
+}
+.abp{
+  height:70%;
+ 
+}
+.happen{
+  height: 25%;
+
+}
+
 .thirdPage-btn{
     text-align: center;
     margin-top: 3rem;
