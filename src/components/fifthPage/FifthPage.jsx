@@ -15,7 +15,7 @@ export default function FifthPage() {
                 <img className="cofounder-Img1" src={sameer} alt="cofounder" />
                 <div className="cofounderOne-Des">
                     <h1>Sameer Satyarth</h1>
-                    <h2>Co-Founder & Visionary Strategist</h2>
+                    <h2>Founder & CEO</h2>
                     <p>Sameer is a <span>5-time award-winning PR professional in India</span> and a <span>2-time TEDx speaker</span>, recognized as one of the brightest minds in modern PR. His work has been <span>featured in global media outlets</span> such as Gulf News and Business Standard.<br/><br/>
                         Starting his journey at just <span>16 years old</span>, Sameer has since worked with over <span>2,000 clients globally</span>, helping build multiple brands from <span>zero to 7 figures</span>. With a <span>strong network in public relations and marketing frameworks</span>, he specializes in <span>brand strategy, reputation building, and founder positioning</span>. His ability to blend storytelling with measurable growth makes him one of India’s most trusted PR professionals.
                     </p>
