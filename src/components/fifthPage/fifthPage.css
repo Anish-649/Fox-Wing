@@ -20,7 +20,7 @@
     position:relative;
     height: 75vh;
     width:85%;
-    border:0.01rem solid #fccb0662;
+   
     background-color: #111111;
 border-radius: 3rem;
 }
@@ -31,6 +31,8 @@ border-radius: 3rem;
     top:-2rem;
     left:0rem;
     border-radius: 1rem;
+     border:0.12rem solid #ffbc03;
+     
     /* z-index: 4; */
 }
 .cofounderOne-Des{
@@ -80,6 +82,7 @@ justify-content: center;
     top:-3.3rem;
     right: 0rem;
     border-radius: 1rem;
+    border:0.12rem solid #ffbc03;
 }
 .twoDes{
     position: absolute;
