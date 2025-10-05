@@ -1,0 +1,93 @@
+.founder{
+    height: 245vh;
+    width:100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   font-family: "Roboto Slab", serif;
+}
+.founder-Header{
+    text-align: center;
+    font-size: 3.3rem;
+    margin-top: 12rem;
+    margin-bottom: 0.3rem;
+     
+    font-weight: 450;
+    letter-spacing: 0.1rem;
+}
+.cofounder-One{
+    position:relative;
+    height: 75vh;
+    width:85%;
+   
+    background-color: #111111;
+border-radius: 3rem;
+}
+.cofounder-Img1{
+    position: absolute;
+    height:auto;
+    width:42%;
+    top:-2rem;
+    left:0rem;
+    border-radius: 1rem;
+     border:0.12rem solid #ffbc03;
+     
+    /* z-index: 4; */
+}
+.cofounderOne-Des{
+    position: absolute;
+    right: 2rem;
+    width:55%;
+    height:100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.cofounderOne-Des span{
+    opacity: 1;
+   
+    font-weight: 600;
+}
+.cofounderOne-Des h1{
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #fccb06;
+   
+}
+.cofounderOne-Des h2{
+    opacity:0.8;
+    font-size: 2.5rem;
+
+}
+.cofounderOne-Des p{
+    font-size: 1.2rem;
+    font-family: Work Sans,sans-serif;
+    margin-top: 1rem;
+    /* color: #ccc; */
+    font-weight: 300;
+    padding:0 2rem;
+    opacity:0.7;
+}
+.cofounder-two{
+    margin-top: 12rem;;
+}
+.cofounder-Img2{
+    position: absolute;
+    right: 0;
+    height:auto;
+    width:42%;
+    top:-3.3rem;
+    right: 0rem;
+    border-radius: 1rem;
+    border:0.12rem solid #ffbc03;
+}
+.twoDes{
+    position: absolute;
+    left:0;
+    margin-left: 2.4rem;
+
+}
+
