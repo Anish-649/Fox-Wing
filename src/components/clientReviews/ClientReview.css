@@ -1,0 +1,39 @@
+.reviews-section {
+    min-height: 300vh;
+    /* enough space to scroll */
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    
+}
+
+.reviews-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.reviews-section span {
+    color: #9c5aff;
+    /* purple accent */
+}
+
+.reviews-stack {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.stack-item {
+    position: sticky;
+    top: 10vh;
+}
+
+
+
+.stack-item:not(:first-child) .review-card {
+    transform: translateY(70px);
+    transition: transform 0.4s ease;
+}
+
+.stack-item:has(+ .stack-item .review-card:hover) .review-card {
+    transform: translateY(0);
+}

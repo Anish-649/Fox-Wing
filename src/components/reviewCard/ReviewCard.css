@@ -1,0 +1,35 @@
+.review-card {
+    width: 80%;
+    margin: 4rem auto;
+    padding: 2rem 2.5rem;
+    background-color: #e6ffb5;
+    border-radius: 25px;
+    box-shadow: 5px 8px 0 #333;
+    position: sticky;
+    top: 20vh;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.review-author {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.review-author h3 {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.review-author span {
+    font-size: 0.9rem;
+    color: #333;
+}

@@ -9,6 +9,7 @@ import FifthPage from './components/fifthPage/FifthPage'
 import Events from './components/events/Events'
 
 
+
 function App() {
  
   return (
@@ -19,8 +20,9 @@ function App() {
       <ThirdPage/>
       <FourthPage/>
       <FifthPage/>
-    <Events/>
- </div>
+   
+    <Events/> 
+    </div>
   )
 }
 
