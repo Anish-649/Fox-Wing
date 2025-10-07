@@ -5,7 +5,7 @@ export default function ThirdPage() {
   return (
     <div className='thirdPage'>
       <div className="thirdPage-title">
-        <h1>BE A BRAND AND GET FEATURED IN<br />TOP BRANDED NEWS, TV, PR MEDIA</h1>
+        <h1>BE A BRAND AND GET FEATURED IN<br /><span>TOP BRANDED NEWS, TV, PR MEDIA</span></h1>
       </div>
       <GradientLine />
       <div className="thirdPage-content">
