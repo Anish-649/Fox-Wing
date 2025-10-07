@@ -1,0 +1,56 @@
+.event{
+background-color: #1e3147;
+  margin: 0;
+ 
+  align-items: start;
+  height: 100vh;
+  color:white;
+}
+.hanger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 1rem;
+}
+/* Hanging line */
+.line {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+}
+
+
+
+
+/* Card */
+.card {
+  width: 250px;
+  background-color: #f3ebd3;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: -6px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #1e3147;
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}

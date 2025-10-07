@@ -14,16 +14,20 @@ export default function SecondPage2() {
         </div>
         <div className="gainTrust">
           <div className="workBox secondPage2-exp">
-            <CountUp end={6} duration={1000} decimals={0} />
+           <span className="speed">
+  <CountUp end={6} duration={1500} decimals={0} /><h1 style={{fontSize:"4.3rem",fontWeight:"500",marginLeft:"1rem"}}> +</h1>
+</span>
             <h2>Year Of Experience</h2>
           </div>
           <div className="workBox secondPage2-customer">
-            <CountUp end={5658} duration={2500} decimals={0} />
-            <h2>Customers Worldwide</h2>
+           
+           <span className="speed" style={{}}> <CountUp end={2000} duration={1500} decimals={0} className="speed"/><h1 style={{fontSize:"4.3rem",fontWeight:"500",marginLeft:"1rem"}}> +</h1>
+            </span>
+            <h2>PR Deliverables(features,campaigns & Placements)</h2>
           </div>
           <div className="workBox secondPage2-work">
-            <h1>12K+</h1>
-            <h2>PR works Completed</h2>
+            <span className="speed"><CountUp end={50} duration={1500} decimals={0} className="speed"/><h1 style={{fontSize:"4.3rem",fontWeight:"500",marginLeft:"1rem"}}> +</h1></span>
+            <h2>Projects Successfully Executed</h2>
           </div>
         
            
