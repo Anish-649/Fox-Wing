@@ -5,13 +5,13 @@ import "./ReviewCard.css";
 export default function ReviewCard({ text, name, title, color }) {
   const ref = useRef(null);
 
-  // track scroll progress relative to this card
+  
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
   });
 
-  // interpolate values based on scroll progress
+ 
   
   const y = useTransform(scrollYProgress, [0, 1], [0, -40]);
 

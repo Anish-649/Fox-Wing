@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './ClientReview.css';
 import ReviewCard from '../reviewCard/ReviewCard';
 export default function ClientReview() {
