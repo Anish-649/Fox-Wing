@@ -7,6 +7,7 @@ import ThirdPage from './components/thirdPage/ThirdPage'
 import FourthPage from './components/fourthPage/FourthPage'
 import FifthPage from './components/fifthPage/FifthPage'
 import Events from './components/events/Events'
+import ClientReview from './components/clientReviews/ClientReview'
 
 
 
@@ -20,8 +21,10 @@ function App() {
       <ThirdPage/>
       <FourthPage/>
       <FifthPage/>
-   
-    <Events/> 
+      <Events/> 
+  <ClientReview/>
+  
+    
     </div>
   )
 }
