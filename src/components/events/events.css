@@ -1,9 +1,10 @@
 .event{
 background-color: #111111;
-
+padding:2rem 0;
 border-radius: 5rem;
   align-items: start;
-  height: 155vh;
+  min-height: 145vh;
+  height:auto;
   color:white;
 }
 .event-heading{
@@ -20,7 +21,7 @@ border-radius: 5rem;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4.5rem;
-  padding: 60px 0;
+  padding: 3.5rem 0;
 }
 
 /* Each hanging unit */
