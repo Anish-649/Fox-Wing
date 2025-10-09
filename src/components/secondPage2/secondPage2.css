@@ -1,8 +1,18 @@
 .secondPage2{
-    height:145vh;
+    min-height:105vh;
+    height:auto;
+    /* padding-bottom:3rem; */
     width:100%;
     background: #010101;
  
+}
+.logoSlider-header{
+  color:#aaa;
+  text-align: center;
+  font-size:2rem;
+  font-weight: 600;
+  font-family: "Roboto Slab",serif;
+  margin:0.7rem 0;
 }
 .secondPage2 span{
   color:white;

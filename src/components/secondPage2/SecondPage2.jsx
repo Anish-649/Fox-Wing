@@ -5,6 +5,7 @@ import LogoSlider from "../logoSlider/logoSlider";
 export default function SecondPage2() {
     return (
       <div className="secondPage2">
+        <h1 className="logoSlider-header">__Worked with__</h1>
         <LogoSlider width={200} height={150}/>
         <CurveLine />
         <div className="secondPage2-title">
