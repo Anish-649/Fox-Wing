@@ -25,7 +25,7 @@ export default function ClientReview() {
     ];
  
     return (
-      <section className="reviews-section">
+      <section id="testimonial"className="reviews-section">
         <h2>
           What our <span>clients</span> say
         </h2>

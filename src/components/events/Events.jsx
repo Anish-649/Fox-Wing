@@ -18,7 +18,7 @@ export default function Event() {
   ];
   return (
     <div className='event'>
-      <h1 className="event-heading">__Event__</h1>
+      <h1 className="event-heading">Event</h1>
       <div className="cards-container">
       {images.map((img, i) => (
         <div

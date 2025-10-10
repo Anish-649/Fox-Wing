@@ -1,10 +1,10 @@
 .reviews-section {
-    min-height: 100vh;
+    min-height: 95vh;
     /* enough space to scroll */
     position: relative;
     padding-top: 5rem;
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     
 }
 

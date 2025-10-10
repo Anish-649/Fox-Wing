@@ -8,7 +8,7 @@ export default function FourthPage() {
   return (
     <>
     
-    <div className="fourthPage">
+    <div id="service" className="fourthPage">
         <div className="absolute inset-0 -z-10">
         <GridBackgroundDemo />
       </div>
