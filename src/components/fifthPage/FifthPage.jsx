@@ -5,7 +5,7 @@ import FounderCurveline from "./founderCurveline/FounderCurveline"
 
 export default function FifthPage() {
     return (
-        <div className='founder'>
+        <div id="Team" className='founder'>
             <div className="founder-Header">
                 <p>Meet Our Founders</p>
                 
