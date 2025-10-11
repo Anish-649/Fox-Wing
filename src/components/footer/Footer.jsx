@@ -5,8 +5,7 @@ import {
   FaLinkedin,
   FaInstagram,
   FaFacebookF,
-  FaArrowUp,
-  FaXTwitter
+  FaArrowUp
 } from "react-icons/fa6";
 export default function Footer() {
   return (
@@ -25,18 +24,16 @@ export default function Footer() {
           </p>
 
           <div className="footer-socials">
-            <a href="#">
+            <a href="https://www.linkedin.com/company/fox-wing-media-llp?trk=public_jobs_topcard-org-name">
               <FaLinkedin />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/foxwingmedia/">
               <FaInstagram />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=61574417421407">
               <FaFacebookF />
             </a>
-            <a href="#">
-              <FaXTwitter />
-            </a>
+            
           </div>
 
           <button
