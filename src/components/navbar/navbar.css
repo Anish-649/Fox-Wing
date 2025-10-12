@@ -2,13 +2,13 @@
 .navbar{
   width:100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
- padding:0.5rem 2rem;
+ padding:0rem 1rem;
  letter-spacing: 0rem;
 
   overflow-x: hidden;
- font-family: "Work Sans",sans-serif;
+
   position: absolute;
   
   top:0;
@@ -16,23 +16,32 @@
   z-index: 100;
 }
 .logoPic{
-  width:100px;
-  height: 70px;
+  
+  width:8rem;
+  height: auto;
 
 }
-.navbar ul{
-  background-color: 	#232323;
-   padding: 10px 30px;
-   border-radius: 30px;
-   box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+
+/* Underline effect */
+.navbar li::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  left:0;
+  background: linear-gradient(45deg, #ff00cc, orange);
+  bottom: -5px;
+  transform-origin: center;  
+  transform: scaleX(0);
+  transition: all 0.3s;
 }
-.navbar ul li{
- display: inline-block;
-  padding:5px 10px;
-  margin:0 10px;
-  color:white;
-  cursor: pointer;
+
+.navbar li:hover::after {
+  width: 100%;
+  transform: scaleX(1);
 }
+
 
 .navbar button{
   background: #600203;
@@ -44,5 +53,133 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+/* ---------- Desktop Nav ---------- */
+.off-screen-menu ul{
+  display: flex;
+  background-color: #232323;
+  color: white;
+  font-family: "roboto", sans-serif;
+  gap: 2rem;
+  font-size: 1.12rem;
+  padding: 10px 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.off-screen-menu li {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.1rem 0.8rem;
+  border-radius: 10px;
+}
+
+.off-screen-menu li::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(45deg, #ff00cc, orange);
+  bottom: -5px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.off-screen-menu li:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* ---------- Hamburger Menu ---------- */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .navbar_btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .off-screen-menu{
+    position: fixed;
+    top: 0;
+    right: 0; /* slide in from right side */
+    height: 100vh;
+    width: 60%; /* take 60% of the screen width */
+    background-color: rgba(0, 0, 0, 0.97);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* align items to the left */
+    justify-content: flex-start; /* content from top */
+    padding: 5rem 2rem; /* push menu items down a bit */
+    gap: 1rem;
+    font-size: 1.5rem;
+    transform: translateX(100%); /* hidden off screen */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .off-screen-menu.active {
+    transform: translateX(0); /* slide in */
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .off-screen-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    gap:0.6rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .off-screen-menu li {
+    padding: 0.8rem 0;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 
 

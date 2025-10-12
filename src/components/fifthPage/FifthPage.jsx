@@ -1,9 +1,11 @@
 import "./fifthPage.css"
+import { useState } from "react";
 import anurag from "../../assets/anurag.jpg"
 import sameer from "../../assets/sameer.jpg"
 import FounderCurveline from "./founderCurveline/FounderCurveline"
 
 export default function FifthPage() {
+ const [expanded, setExpanded] = useState(false);
     return (
         <div id="Team" className='founder'>
             <div className="founder-Header">
@@ -16,9 +18,12 @@ export default function FifthPage() {
                 <div className="cofounderOne-Des">
                     <h1>Sameer Satyarth</h1>
                     <h2>Founder & CEO</h2>
-                    <p>Sameer is a <span>5-time award-winning PR professional in India</span> and a <span>2-time TEDx speaker</span>, recognized as one of the brightest minds in modern PR. His work has been <span>featured in global media outlets</span> such as Gulf News and Business Standard.<br/><br/>
+                    <p className={expanded ? "expanded" : ""}>Sameer is a <span>5-time award-winning PR professional in India</span> and a <span>2-time TEDx speaker</span>, recognized as one of the brightest minds in modern PR. His work has been <span>featured in global media outlets</span> such as Gulf News and Business Standard.<br/><br/>
                         Starting his journey at just <span>16 years old</span>, Sameer has since worked with over <span>2,000 clients globally</span>, helping build multiple brands from <span>zero to 7 figures</span>. With a <span>strong network in public relations and marketing frameworks</span>, he specializes in <span>brand strategy, reputation building, and founder positioning</span>. His ability to blend storytelling with measurable growth makes him one of India’s most trusted PR professionals.
                     </p>
+                      <button onClick={() => setExpanded(!expanded)}>
+        {expanded ? "Read less" : "Read more"}
+      </button>
                 </div>
             </div>
             <div className="cofounder-two cofounder-One">

@@ -2,12 +2,24 @@
 .gradientLine{
     width:100%;
     height:6rem;
-   
-   text-align:center;
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+  
 }
 .gradientlin{
     width:50%;
     height:10px;
-    text-align:center;
-    margin-left: 24rem;
+    
+   
+}
+@media (max-width: 768px) {
+    .gradientLine{
+        height:3rem;
+       
+    }
+    .gradientlin{
+        width:80%;
+        
+    }
 }

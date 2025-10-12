@@ -6,8 +6,9 @@ export default function ThirdPage() {
     <div className='thirdPage'>
       <div className="thirdPage-title">
         <h1>BE A BRAND AND GET FEATURED IN<br /><span>TOP BRANDED NEWS, TV, PR MEDIA</span></h1>
-      </div>
+       </div>
       <GradientLine />
+     
       <div className="thirdPage-content">
         <div className="row">
           <div className="mediaBox">

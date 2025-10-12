@@ -98,3 +98,168 @@ color:#aaa;
 .marketrow{
     gap:4rem;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* 🟢 Large Tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .public-card-component {
+    width: 18rem;
+    height: 15rem;
+  }
+
+  .services-heading,
+  .marketing-heading {
+    font-size: 2.8rem;
+  }
+
+  .services-subtitle {
+    font-size: 2.5rem;
+  }
+
+  .separaterow {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* 🟡 Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .fourthPage {
+    padding-bottom: 3rem;
+  }
+
+  .services-subtitle {
+    font-size: 2.2rem;
+  }
+
+  .services-heading,
+  .marketing-heading {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .public-service {
+    margin: 0 2rem;
+  }
+
+  .public-card-component {
+    width: 16rem;
+    height: 14rem;
+  }
+
+  .public-card-component h1 {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  .public-card-component h2 {
+    font-size: 1.6rem;
+  }
+
+  .marketrow {
+    gap: 2rem;
+  }
+}
+
+/* 🟠 Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .fourthPage {
+    min-height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .services-heading,
+  .marketing-heading {
+    font-size: 2.2rem;
+  }
+
+  .public-service {
+    margin: 0 1.5rem;
+  }
+
+  .public-card {
+    gap: 1rem;
+  }
+
+  .separaterow {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .public-card-component {
+    width: 85%;
+    height: auto;
+    padding: 0.7rem;
+    text-align: center;
+  }
+
+  .public-card-component h1 {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+
+  .public-card-component h2 {
+    font-size: 1.5rem;
+   margin:0.5rem 0 0.5rem 1.3rem;
+  }
+
+  .marketing-heading {
+    margin-top: 2.5rem;
+  }
+}
+
+/* 🔴 Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .services-subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .services-heading,
+  .marketing-heading {
+    font-size: 1.8rem;
+    
+  }
+
+  .public-service {
+    margin: 0 0rem;
+  }
+
+  .public-card {
+    gap: 1.1rem;
+  }
+
+  .public-card-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: flex-start;
+   height: auto;
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 1.8rem;
+  }
+
+  .public-card-component h1 {
+    font-size: 2rem;
+    margin-left: 0.7rem;
+  }
+
+  .public-card-component h2 {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  .marketrow {
+    gap: 1.2rem;
+  }
+}

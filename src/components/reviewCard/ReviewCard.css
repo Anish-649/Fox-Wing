@@ -1,35 +1,77 @@
 .review-card {
-    width: 80%;
-    margin: 4rem auto;
-    padding: 2rem 2.5rem;
-    background-color: #e6ffb5;
-    border-radius: 25px;
-    box-shadow: 5px 8px 0 #333;
-    position: sticky;
-    top: 20vh;
+  width: 80%;
+  margin: 4rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #e6ffb5;
+  border-radius: 25px;
+  box-shadow: 5px 8px 0 #333;
+  position: sticky;
+  top: 20vh;
+  transition: all 0.3s ease; /* Added: smooth scaling */
 }
 
+/* 👍 Icon styling */
 .icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
+/* ✍️ Review text */
 .review-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  font-size: clamp(1rem, 1.5vw + 0.3rem, 1.6rem); /* Changed: responsive text size */
+  line-height: clamp(1.8rem, 2.5vw + 0.2rem, 2.7rem); /* Changed */
+  text-align: left;
+  font-family: "Work Sans", sans-serif;
 }
 
+/* 👤 Author info */
 .review-author {
-    margin-top: 1.5rem;
-    text-align: right;
+  margin-top: 1.5rem;
+  text-align: right;
 }
 
 .review-author h3 {
-    font-weight: 700;
-    margin-bottom: 0.2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  font-size: clamp(1rem, 1.2vw + 0.4rem, 1.4rem); /* Added */
 }
 
 .review-author span {
-    font-size: 0.9rem;
-    color: #333;
+  font-size: clamp(0.8rem, 1vw + 0.2rem, 0.9rem); /* Added */
+  color: #333;
+}
+
+/* 📱 Responsive design tweaks */
+@media (max-width: 900px) {
+  .review-card {
+    width: 90%; /* Changed: take more width on small screens */
+    padding: 1.5rem 1.8rem; /* Smaller padding */
+    box-shadow: 3px 5px 0 #333; /* Softer shadow */
+    border-radius: 20px; /* Slightly smaller corners */
+  }
+
+  .icon {
+    font-size: 1.6rem; /* Scaled down */
+  }
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    width: 95%;
+    padding: 1.2rem 1.4rem;
+    top: 15vh; /* adjust stickiness */
+  }
+
+  .icon {
+    font-size: 1.4rem;
+  }
+
+  .review-text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  .review-author {
+    text-align: left; /* Better flow on narrow screens */
+  }
 }
