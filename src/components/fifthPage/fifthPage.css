@@ -1,6 +1,6 @@
 .founder{
 
-    min-height: 190vh;
+    min-height: 110vh;
     height: auto;
     padding-bottom: 6rem;
     width:100%;
@@ -74,9 +74,7 @@
 }
 
 /* Flip layout for second founder */
-.cofounder-two {
-  
-}
+
 
 /* Responsive for smaller screens */
 @media (max-width: 900px) {
@@ -95,5 +93,166 @@
   .cofounder-Img2 {
     width: 80%;
     max-width: 350px;
+  }
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* 🟢 Large Tablets (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .founder-Header {
+    font-size: 2.8rem;
+  }
+
+  .cofounder-One {
+    width: 90%;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .cofounderOne-Des h1 {
+    font-size: 2.2rem;
+  }
+
+  .cofounderOne-Des h2 {
+    font-size: 1.5rem;
+  }
+
+  .cofounderOne-Des p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+/* 🟡 Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .founder {
+    padding-bottom: 4rem;
+  }
+
+  .founder-Header {
+    font-size: 2.5rem;
+  }
+
+  .cofounder-One {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+
+  .cofounderOne-Des {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .cofounderOne-Des h1 {
+    font-size: 2rem;
+  }
+
+  .cofounderOne-Des h2 {
+    font-size: 1.4rem;
+  }
+
+  .cofounderOne-Des p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 90%;
+  }
+
+  .cofounder-Img1,
+  .cofounder-Img2 {
+    width: 80%;
+    max-width: 350px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* 🟠 Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .founder {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .founder-Header {
+    font-size: 2.2rem;
+    letter-spacing: 0.08rem;
+    margin-top: 2rem;
+   
+  }
+
+  .cofounder-One {
+    flex-direction: column;
+    width: 99%;
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .cofounderOne-Des h1 {
+    font-size: 1.8rem;
+  }
+
+  .cofounderOne-Des h2 {
+    font-size: 1.2rem;
+  }
+
+  .cofounderOne-Des p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .cofounder-Img1,
+  .cofounder-Img2 {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+/* 🔴 Small Mobile (max-width: 480px) */
+@media (max-width: 550px) {
+  .founder {
+    padding-bottom: 2rem;
+  }
+
+  .founder-Header {
+    font-size: 1.8rem;
+  }
+
+  .cofounder-One {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 0;
+  }
+
+  .cofounderOne-Des h1 {
+    font-size: 1.6rem;
+  }
+
+  .cofounderOne-Des h2 {
+    font-size: 1.1rem;
+  }
+
+  .cofounderOne-Des p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
+     display: -webkit-box;
+  -webkit-line-clamp: 4;  /* Show only 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  .cofounderOne-Des p.expanded {
+    -webkit-line-clamp: unset; /* Remove line clamp when expanded */
+    overflow: visible; /* Show full text when expanded */
+  }
+
+  .cofounder-Img1,
+  .cofounder-Img2 {
+    width: 95%;
+    max-width: 300px;
+    border-radius: 0.8rem;
   }
 }

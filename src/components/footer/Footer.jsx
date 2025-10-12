@@ -1,6 +1,7 @@
 
 import "./Footer.css";
 import {Link} from "react-scroll";
+import logo from "../../assets/logo.png"
 import {
   FaLinkedin,
   FaInstagram,
@@ -15,6 +16,7 @@ export default function Footer() {
         <div className="footer-left">
           <h2 className="footer-logo">
             <Link to="hero" smooth={true} duration={500} spy={true} offset={0}>
+            <img style={{height:"4rem" ,width:"auto"}} src={logo} alt="logo"/>
               FOX WING
             </Link>
           </h2>
