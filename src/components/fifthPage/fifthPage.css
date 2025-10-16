@@ -72,10 +72,34 @@
   opacity: 0.8;
   font-family: "Work Sans", sans-serif;
 }
+.cofounderOne-Des p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
+     display: -webkit-box;
+  -webkit-line-clamp: 4;  /* Show only 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  .cofounderOne-Des p.expanded {
+    -webkit-line-clamp: unset; /* Remove line clamp when expanded */
+    overflow: visible; /* Show full text when expanded */
+  }
 
-/* Flip layout for second founder */
+/* Hide the Read More button on large screens */
+@media (min-width: 790px) {
+  .cofounderOne-Des button {
+    display: none;
+  }
 
-
+  /* Also make sure full text is shown by default on desktop */
+  .cofounderOne-Des p {
+    font-size:1.2rem;
+    -webkit-line-clamp: unset !important;
+    overflow: visible !important;
+  }
+}
 /* Responsive for smaller screens */
 @media (max-width: 900px) {
   .cofounder-One,

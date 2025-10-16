@@ -1,9 +1,23 @@
 import "./secondPage2.css";
+import { useState } from "react";
 import CurveLine from "../curveLine/CurveLine";
 import CountUp from "../countUp";
 import LogoSlider from "../logoSlider/logoSlider";
 
 export default function SecondPage2() {
+
+    const [readMore, setReadMore] = useState(false);
+
+  const toggleReadMore = () => setReadMore(!readMore);
+
+  const text = `At Fox Wing Media LLP, we believe public relations is more than press releases. 
+  It’s the art of shaping how your story is heard, how your reputation is built, 
+  and how your brand earns trust in a crowded digital age. We are an award-winning PR and marketing team, powered by PhD-holder marketers, 
+  seasoned strategists, and AI-driven innovation. With a blend of academic depth 
+  and industry expertise, we create PR that not only boosts visibility but also 
+  drives measurable business outcomes.`;
+
+
   return (
     <div id="presence" className="secondPage2">
       <h1 className="logoSlider-header">Worked with</h1>
@@ -43,17 +57,10 @@ export default function SecondPage2() {
       </div>
 
       <div className="teamMember workBox">
-        <p>
-          At Fox Wing Media LLP, we believe public relations is more than press releases. 
-          It’s the art of shaping how your story is heard, how your reputation is built, 
-          and how your brand earns trust in a crowded digital age.
-        </p>
-        <p>
-          We are an award-winning PR and marketing team, powered by PhD-holder marketers, 
-          seasoned strategists, and AI-driven innovation. With a blend of academic depth 
-          and industry expertise, we create PR that not only boosts visibility but also 
-          drives measurable business outcomes.
-        </p>
+        <p className={readMore ? "expanded" : "collapsed"}>{text}</p>
+        <button className="readmore-btn" onClick={toggleReadMore}>
+  {readMore ? "Read Less" : "Read More"}
+</button>
       </div>
     </div>
   );

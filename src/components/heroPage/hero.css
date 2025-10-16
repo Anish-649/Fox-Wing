@@ -33,7 +33,7 @@
      z-index: 1;
      text-align: center;
      font-family: "Audiowide", sans-serif;
-     font-size: clamp(2rem, 5vw + 1rem, 5.2rem);
+     font-size: clamp(2rem, 5vw + 2rem, 5.2rem);
      line-height: clamp(2.4rem, 5.5vw + 1rem, 5.6rem);
      font-weight: 400;
      letter-spacing: 0.1rem;
@@ -42,8 +42,7 @@
 
  .hero h3 {
      color: white;
-
-     z-index: 1;
+      z-index: 1;
      width: 100%;
      text-align: center;
       font-size: clamp(1rem, 1.5vw + 0.6rem, 1.4rem);
@@ -77,8 +76,8 @@
 
   .hero h1 {
     width: 100%;
-    font-size: clamp(1.8rem, 7vw, 3rem);
-    line-height: clamp(2.2rem, 8vw, 3.5rem);
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    line-height: clamp(2.2rem, 12vw, 3.5rem);
   }
 
   .hero h3 {
