@@ -6,10 +6,9 @@ import event4 from "../../assets/event/event4.webp"
 import event5 from "../../assets/event/event5.webp"
 import event6 from "../../assets/event/event6.webp"
 import event7 from "../../assets/event/event7.webp"
-// import event8 from "../../assets/event/event8.DNG"
-import event9 from "../../assets/event/event9.png"
+
 import event10 from "../../assets/event/event10.webp"
-import event11 from "../../assets/event/event11.jpg"
+
 
 export default function Event() {
    
