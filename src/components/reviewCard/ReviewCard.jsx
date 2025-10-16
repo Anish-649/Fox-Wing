@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "./ReviewCard.css";
+import logo from "../../assets/logo.webp"
 
 export default function ReviewCard({ text, name, title, color }) {
   const ref = useRef(null);
@@ -22,7 +23,7 @@ export default function ReviewCard({ text, name, title, color }) {
       style={{  y, backgroundColor:color }}
       transition={{ duration: 0.5 }}
     >
-      <div className="icon">👍</div>
+      <div className="icon"><img src={logo} alt="logo"/></div>
       <p className="review-text">{text}</p>
       <div className="review-author">
         <h3>{name}</h3>
