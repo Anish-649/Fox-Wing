@@ -1,8 +1,8 @@
 // FifthPage.jsx
 import "./fifthPage.css";
 import { useState } from "react";
-import anurag from "../../assets/anurag.jpg";
-import sameer from "../../assets/sameer.jpg";
+import anurag from "../../assets/anurag.webp";
+import sameer from "../../assets/sameer.webp";
 import FounderCurveline from "./founderCurveline/FounderCurveline";
 
 export default function FifthPage() {

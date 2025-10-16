@@ -1,5 +1,5 @@
 import "./hero.css"
-import bg_logo from "../../assets/bg_logo.png";
+import bg_logo from "../../assets/bg_logo.webp";
 
 export default function Hero() {
   return (
