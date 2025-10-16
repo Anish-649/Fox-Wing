@@ -1,7 +1,7 @@
 import "./events.css"
 import event1 from "../../assets/event/event1.png";
 import event2 from "../../assets/event/event2.png"
-import event3 from "../../assets/event/event3.JPG"
+import event3 from "../../assets/event/event3.webp"
 import event4 from "../../assets/event/event4.jpg"
 import event5 from "../../assets/event/event5.jpg"
 import event6 from "../../assets/event/event6.png"
@@ -29,7 +29,7 @@ export default function Event() {
           <div className="dot"></div>
           <div className="line"></div>
           <div className="card">
-           <img src={img} alt={`card-${i}`}/>
+           <img src={img} alt={`card-${i}`} loading="lazy"/>
           </div>
         </div>
       ))}

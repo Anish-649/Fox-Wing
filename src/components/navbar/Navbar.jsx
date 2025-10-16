@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi"; // icons for menu
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 import "./navbar.css";
 
 const Navbar = () => {
