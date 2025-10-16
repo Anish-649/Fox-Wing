@@ -1,15 +1,14 @@
 import "./events.css"
-import event1 from "../../assets/event/event1.png";
-import event2 from "../../assets/event/event2.png"
+import event1 from "../../assets/event/event1.webp";
+import event2 from "../../assets/event/event2.webp"
 import event3 from "../../assets/event/event3.webp"
-import event4 from "../../assets/event/event4.jpg"
-import event5 from "../../assets/event/event5.jpg"
-import event6 from "../../assets/event/event6.png"
-import event7 from "../../assets/event/event7.jpg"
-// import event8 from "../../assets/event/event8.DNG"
-import event9 from "../../assets/event/event9.png"
-import event10 from "../../assets/event/event10.png"
-import event11 from "../../assets/event/event11.jpg"
+import event4 from "../../assets/event/event4.webp"
+import event5 from "../../assets/event/event5.webp"
+import event6 from "../../assets/event/event6.webp"
+import event7 from "../../assets/event/event7.webp"
+
+import event10 from "../../assets/event/event10.webp"
+
 
 export default function Event() {
    

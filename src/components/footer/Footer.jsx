@@ -1,7 +1,7 @@
 
 import "./Footer.css";
 import {Link} from "react-scroll";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.webp"
 import {
   FaLinkedin,
   FaInstagram,
