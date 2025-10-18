@@ -10,6 +10,7 @@ import Events from "./components/events/Events";
 import ClientReview from "./components/clientReviews/ClientReview";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Contactbtn from "./components/contactbtn/Contactbtn";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <FifthPage />
               <Events />
               <ClientReview />
+              <Contactbtn/>
               <Footer />
             </>
           }

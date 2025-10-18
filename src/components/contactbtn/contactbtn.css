@@ -1,0 +1,64 @@
+.contactbtn {
+  height: auto;
+  text-align: center;
+  padding: 4rem 0 6rem 0;
+}
+
+/* Main button */
+.contactbtn button {
+  background-color: #e04e2c;
+  color: white;
+  border: none;
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+  font-size: clamp(1.3rem, 6.5vw, 5.9rem);
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactbtn button:hover {
+  background-color: #b64126;
+  transform: scale(1.05);
+}
+
+/* ----------------------------- */
+/* 📱 Responsive Design */
+/* ----------------------------- */
+
+/* Tablets (below 1024px) */
+@media (max-width: 1024px) {
+  .contactbtn {
+    padding: 3.5rem 0 5rem 0;
+  }
+
+  .contactbtn button {
+    font-size: 4.7rem;
+    padding: 1rem 3rem;
+  }
+}
+
+/* Small Tablets and Landscape Phones (below 768px) */
+@media (max-width: 768px) {
+  .contactbtn {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .contactbtn button {
+    font-size: 3.4rem;
+    padding: 0.9rem 2.5rem;
+  }
+}
+
+/* Mobile Portrait (below 480px) */
+@media (max-width: 480px) {
+  .contactbtn {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  .contactbtn button {
+    font-size: 2.7rem;
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+  }
+}

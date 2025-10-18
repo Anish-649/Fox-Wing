@@ -5,7 +5,7 @@ export default function Contact() {
     <div id="contact" className="form">
       <div className="contact-Form1">
         <h2>LET’S TALK</h2>
-        <form method="post" action="https://formspree.io/f/mzzjewno">
+        <form method="post" action="https://formspree.io/f/xeornwye">
           <input
             type="text"
             name="name"

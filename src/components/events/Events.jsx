@@ -13,7 +13,7 @@ import event10 from "../../assets/event/event10.webp"
 export default function Event() {
    
     const images = [
-    event1,event2,event3,event4,event5,event6,event7,event10
+    event1,event2,event3,event4,event5,event7,event10
   ];
   return (
     <div className='event'>
