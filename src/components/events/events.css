@@ -1,40 +1,42 @@
-.event{
-background-color: #111111;
-padding:2rem 0;
-border-radius: 5rem;
+.event {
+  background-color: #111111;
+  padding: 2rem 0;
+  border-radius: 5rem;
   align-items: start;
-  min-height: 145vh;
-  height:auto;
-  color:white;
+  min-height: 100vh;
+  color: white;
 }
-.event-heading{
-    text-align: center;
-    font-size: 4.3rem;
-    padding-top: 2rem;
-  
-     font-family: "Roboto Slab", serif;
-    font-weight: 450;
-    letter-spacing: 0.1rem;
+
+/* Title */
+.event-heading {
+  text-align: center;
+  font-size: clamp(2.2rem, 4vw + 1rem, 4.3rem);
+  padding-top: 2rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 450;
+  letter-spacing: 0.1rem;
 }
+
+/* Card container */
 .cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
-  padding: 3.5rem 0;
-  margin:0 1rem;
+  gap: 3rem;
+  padding: 3.5rem 1rem;
 }
 
 /* Each hanging unit */
 .hanger {
-  margin:1.3rem;
+  margin: 1.3rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeInUp 0.6s ease both;
 }
 
-/* Alternate up/down position */
+/* Alternate up/down positioning */
 .hanger.up {
   transform: translateY(-37px);
 }
@@ -51,23 +53,22 @@ border-radius: 5rem;
 }
 
 .line {
-  width: 0.09rem;
-  height: 5.4rem;
+  width: 0.1rem;
+  height: 5rem;
   background-color: white;
 }
 
 /* The card itself */
 .card {
   width: 17rem;
-  height:21rem;
-  
+  height: 25rem;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  
   color: #1e3147;
+  background: #000;
+  overflow: hidden;
 }
-
 
 .card img {
   width: 100%;
@@ -80,4 +81,107 @@ border-radius: 5rem;
 
 .card img:hover {
   transform: scale(1.07);
+}
+
+/* Simple fade animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------------------------- */
+/* 📱 Responsive Design */
+/* ----------------------------- */
+
+/* Tablets (below 1024px) */
+@media (max-width: 1024px) {
+  .cards-container {
+    gap: 2.5rem;
+  }
+
+  .card {
+    width: 15rem;
+    height: 19rem;
+  }
+
+  .line {
+    height: 4rem;
+  }
+}
+
+/* Mobile Landscape / Small Tablets (below 768px) */
+@media (max-width: 768px) {
+  .event {
+    border-radius: 3rem;
+    padding: 1.5rem 0;
+  }
+
+  .event-heading {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .cards-container {
+    gap: 2rem;
+    padding: 2.5rem 0.5rem;
+  }
+
+  .card {
+    width: 13rem;
+    height: 17rem;
+  }
+
+  .line {
+    height: 3.5rem;
+  }
+}
+
+/* Mobile Portrait (below 480px) */
+@media (max-width: 480px) {
+  .event {
+    border-radius: 2rem;
+    padding: 1rem 0;
+  }
+
+  .event-heading {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .hanger.up,
+  .hanger.down {
+    transform: translateY(0);
+  }
+
+  .card {
+    width: 18rem;
+    max-width: 33rem;
+    height: 18rem;
+    
+  }
+  .card img{
+    object-fit:cover;
+    height:100%;
+
+  }
+
+  .line {
+    height: 2.5rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
 }
