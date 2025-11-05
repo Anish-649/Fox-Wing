@@ -1,11 +1,14 @@
 import GradientLine from "../gradientLine/GradientLine"
 import "./thirdPage.css"
+import forbes from '../../assets/brand/forbes_logo.png'
+import tedx from '../../assets/brand/TedX_logo.jpg'
+import midday from '../../assets/brand/mid-day.png'
 
 export default function ThirdPage() {
   return (
     <div className='thirdPage'>
       <div className="thirdPage-title">
-        <h1>BE A BRAND AND GET FEATURED IN<br /><span>TOP BRANDED NEWS, TV, PR MEDIA</span></h1>
+        <h1>Stand Out From The Competition And Build An Evergreen Brand<br /><span>Be Visible And Credible By Getting Featured.</span></h1>
        </div>
       <GradientLine />
      
@@ -17,24 +20,24 @@ export default function ThirdPage() {
             <img className="outlook" src="https://www.amity.edu/inbushera/assests/img/outlook.png" />
           </div>
           <div className="mediaBox">
-            <img className="happen" src="https://happenrecently.com/wp-content/uploads/2022/08/happen-recently-logo-x2-1.png" />
+            <img className="happen" src={forbes} />
           </div>
         </div>
         <div className="row">
           <div className="mediaBox">
-            <img className="midday" src="https://i0.wp.com/thecuriocitycollective.org/wp-content/uploads/2020/04/midday.png?fit=1200%2C1200&ssl=1" />
+            <img className="midday" src={midday} />
           </div>
           <div className="mediaBox">
             <img className="abp" src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/abp-live.png" />
           </div>
           <div className="mediaBox">
-            <img className="josh-talk" src="https://www.pikpng.com/pngl/b/585-5852469_josh-talks-logo-png-clipart.png" />
+            <img className="josh-talk" src={tedx} />
           </div>
 
         </div>
       </div>
       <div className="thirdPage-btn">
-        <button class="gradient-btn">+20 NEWS CHANNELS</button>
+        <button class="gradient-btn">500+ OPPORTUNITIES</button>
       </div>
 
     </div>

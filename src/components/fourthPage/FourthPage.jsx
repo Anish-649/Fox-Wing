@@ -30,7 +30,7 @@ export default function FourthPage() {
               </div>
               <div className="public-card-component">
                 <h1>03</h1>
-                <h2>Paid Media & 360° PR Solutions</h2>
+                <h2>Media Buying</h2>
               </div>
             </div>
             <div className="separaterow">
@@ -40,15 +40,15 @@ export default function FourthPage() {
               </div>
               <div className="public-card-component">
                 <h1>05</h1>
-                <h2>Seeking Opportunities & Thought Leadership</h2>
+                <h2>Seeking Opportunities</h2>
               </div>
               <div className="public-card-component">
                 <h1>06</h1>
-                <h2>Founder & Personal Branding</h2>
+                <h2>Founders Personal Branding</h2>
               </div>
               <div className="public-card-component">
                 <h1>07</h1>
-                <h2>Magazines</h2>
+                <h2>Print & E-Magazines</h2>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function FourthPage() {
             <div className="separaterow marketrow">
               <div className="public-card-component">
                 <h1>03</h1>
-                <h2>Web Development </h2>
+                <h2>Branding</h2>
               </div>
               <div className="public-card-component">
                 <h1>04</h1>
