@@ -14,7 +14,7 @@ export default function SecondPage2() {
   It’s the art of shaping how your story is heard, how your reputation is built, 
   and how your brand earns trust in a crowded digital age. We are an award-winning PR and marketing team, powered by PhD-holder marketers, 
   seasoned strategists, and AI-driven innovation. With a blend of academic depth 
-  and industry expertise, we create PR that not only boosts visibility but also 
+  and industry expertise. we create PR that not only boosts visibility but also 
   drives measurable business outcomes.`;
 
 
@@ -57,7 +57,12 @@ export default function SecondPage2() {
       </div>
 
       <div className="teamMember workBox">
-        <p className={readMore ? "expanded" : "collapsed"}>{text}</p>
+        <p className={readMore ? "expanded" : "collapsed"}>At Fox Wing Media LLP, we believe public relations is more than press releases. 
+  It’s the art of shaping how your story is heard, how your reputation is built, 
+  and how your brand earns trust in a crowded digital age. <br/><br/>We are an award-winning PR and marketing team, powered by PhD-holder marketers, 
+  seasoned strategists, and AI-driven innovation. With a blend of academic depth 
+  and industry expertise.<br/><br/> we create PR that not only boosts visibility but also 
+  drives measurable business outcomes.</p>
         <button className="readmore-btn" onClick={toggleReadMore}>
   {readMore ? "Read Less" : "Read More"}
 </button>

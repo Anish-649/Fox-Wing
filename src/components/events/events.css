@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 4.5rem;
   padding: 3.5rem 1rem;
 }
 
@@ -82,7 +82,40 @@
 .card img:hover {
   transform: scale(1.07);
 }
+.view-more-btn {
+  margin: 20px auto;
+  display: block;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #121212;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 
+.event .view-more-btn:hover {
+  background: white;
+  color:red !important;
+}
+  .view-more-btn {
+  margin: 20px auto;
+  display: block;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #121212;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.event .view-more-btn:hover {
+  background: white;
+  
+}
 /* Simple fade animation */
 @keyframes fadeInUp {
   from {
@@ -139,6 +172,7 @@
   .line {
     height: 3.5rem;
   }
+
 }
 
 /* Mobile Portrait (below 480px) */

@@ -21,8 +21,10 @@ function App() {
           path="/"
           element={
             <>
+            
               <Navbar />
               <Hero />
+              
               <SecondPage2 />
               <ThirdPage />
               <FourthPage />
