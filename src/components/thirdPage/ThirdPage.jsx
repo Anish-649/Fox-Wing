@@ -1,6 +1,6 @@
 import GradientLine from "../gradientLine/GradientLine"
 import "./thirdPage.css"
-import forbes from '../../assets/brand/forbes_logo.png'
+import forbes from '../../assets/brand/Forbes_logo.png'
 import tedx from '../../assets/brand/TedX_logo.jpg'
 import midday from '../../assets/brand/mid-day.png'
 
