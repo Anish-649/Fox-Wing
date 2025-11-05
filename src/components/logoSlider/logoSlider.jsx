@@ -7,11 +7,15 @@ import Neesh from "../../assets/companyLogo/neeshperfumes.png";
 import Yourstory from "../../assets/companyLogo/yourstory.png";
 import Zeemusic from "../../assets/companyLogo/zeemusic.png";
 import Zinmatt from "../../assets/companyLogo/zinmatt.webp";
+import Gxp from "../../assets/companyLogo/gxp-logo-white.png";
+import Salonik from "../../assets/companyLogo/logo_Salonik.png";
+import LPU from "../../assets/companyLogo/LPUnew.png";
+import Pror from "../../assets/companyLogo/pror.png";
 const LogoSlider = ({ width = 100, height = 50, reverse = false }) => {
   const companies = [
     {
       name: "Aliceblue",
-      logo: Aliceblue
+      logo: Aliceblue,
     },
     {
       name: "EstaGlobal",
@@ -34,9 +38,25 @@ const LogoSlider = ({ width = 100, height = 50, reverse = false }) => {
       logo: Zeemusic,
     },
     {
-      name:"Zinmatt",
-      logo: Zinmatt
-    }
+      name: "Zinmatt",
+      logo: Zinmatt,
+    },
+    {
+      name: "Lpu",
+      logo: LPU,
+    },
+    {
+      name: "Gxp",
+      logo: Gxp,
+    },
+    {
+      name: "Salonik",
+      logo: Salonik,
+    },
+    {
+      name: "pror",
+      logo: Pror,
+    },
   ];
 
   const quantity = companies.length;
