@@ -2,6 +2,11 @@
 import "./Footer.css";
 import {Link} from "react-scroll";
 import logo from "../../assets/logo.webp"
+import Privacypolicy from "../privacyPolicy/Privacypolicy";
+import TermsConditions from "../termsConditions/Termscondition";
+import Paymentrefund from "../paymentRefund/Paymentrefund";
+import Careerpage from "../careersPage/Careerpage";
+import Frequentlyasked from "../frequentlyAsked/Frequentlyasked";
 import {
   FaLinkedin,
   FaInstagram,
@@ -16,7 +21,11 @@ export default function Footer() {
         <div className="footer-left">
           <h2 className="footer-logo">
             <Link to="hero" smooth={true} duration={500} spy={true} offset={0}>
-            <img style={{height:"4rem" ,width:"auto"}} src={logo} alt="logo"/>
+              <img
+                style={{ height: "4rem", width: "auto" }}
+                src={logo}
+                alt="logo"
+              />
               FOX WING
             </Link>
           </h2>
@@ -35,9 +44,9 @@ export default function Footer() {
             <a href="https://www.facebook.com/profile.php?id=61574417421407">
               <FaFacebookF />
             </a>
-            
           </div>
-
+          <h3 className="email">Email: fly@foxwingmedia.com</h3>
+          <h3 className="phone">Whatsapp/Call: +91 7258830117</h3>
           <button
             className="back-to-top"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -109,19 +118,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="footer-column">
+          <div className="footer-column-legal">
             <h4>Legal</h4>
-            <ul>
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#">Terms of Services</a>
-              </li>
-              <li>
-                <a href="#">Lawyer’s Corners</a>
-              </li>
-            </ul>
+
+            <Privacypolicy />
+            <TermsConditions />
+            <Paymentrefund />
+            <Careerpage />
+            <Frequentlyasked />
           </div>
         </div>
       </div>

@@ -110,6 +110,11 @@
 .footer-column a:hover {
   color: #f0c040;
 }
+.footer-column-legal h4 {
+  font-size: clamp(1rem, 1.5vw + 0.2rem, 1.1rem);
+    
+    margin-left: 1rem;
+}
 
 /* ⚫ Bottom Bar */
 .footer-bottom {
@@ -147,7 +152,7 @@
 /* 📱 Mobile */
 @media (max-width: 600px) {
   .footer {
-    /* height:70vh; */
+    
     padding: 2rem 1.5rem 0;
   }
 
@@ -184,7 +189,5 @@
     align-self: flex-start;
   }
 
-  /* .footer-bottom {
-    font-size: 0.8rem;
-  } */
+  
 }
