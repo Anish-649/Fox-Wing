@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import anurag from "../../assets/anurag.webp";
 import sameer from "../../assets/sameer.webp";
 import FounderCurveline from "./founderCurveline/FounderCurveline";
+import Reveal from "../../Reveal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,10 +46,13 @@ export default function FifthPage() {
 
   return (
     <div id="Team" className="founder" ref={sectionRef}>
+      <Reveal>
       <div className="founder-Header">
+        
         <p>Meet Our Founders</p>
+        
       </div>
-
+</Reveal>
       <FounderCurveline />
 
       {/* Sameer */}
