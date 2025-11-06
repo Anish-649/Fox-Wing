@@ -14,7 +14,7 @@
     background-color: #101828;
     width: 60%;
     height: auto;
-    border-radius: 5rem;
+    border-radius: 4rem;
     padding: 3rem 2rem;
     
     
@@ -100,8 +100,12 @@ textarea {
 
 /* Tablet (max-width: 900px) */
 @media (max-width: 900px) {
+    .contact-Form1{
+         border-radius: 1rem;
+    }
     .contact-Form1 h2 {
         font-size: 2.2rem;
+       
     }
 
     form {
@@ -117,6 +121,8 @@ textarea {
 @media (max-width: 600px) {
     .contact-Form1 {
         padding: 2rem 1rem;
+        width:98%;
+        border-radius: 1rem;
     }
 
     .contact-Form1 h2 {

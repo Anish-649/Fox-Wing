@@ -26,7 +26,7 @@ export default function Footer() {
                 src={logo}
                 alt="logo"
               />
-              FOX WING
+              FOX WING MEDIA LLP
             </Link>
           </h2>
           <p className="footer-description">

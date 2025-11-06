@@ -1,6 +1,6 @@
 .event {
   background-color: #111111;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
   border-radius: 5rem;
   align-items: start;
   min-height: 100vh;
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 4.5rem;
-  padding: 3.5rem 1rem;
+  padding: 3.5rem 7rem;
 }
 
 /* Each hanging unit */
