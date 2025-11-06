@@ -1,3 +1,4 @@
+import Reveal from "../../Reveal";
 import GradientLine from "../gradientLine/GradientLine";
 import "./fourthPage.css";
 import { GridBackgroundDemo } from "./lib/GridBackgroundDemo";
@@ -12,12 +13,19 @@ export default function FourthPage() {
         <div className="absolute inset-0 -z-10">
         <GridBackgroundDemo />
       </div>
+      
       <div className="services">
+        <Reveal>
         <p className="services-subtitle">OUR SERVICES</p>
+        </Reveal>
         <div className="public-service">
+          <Reveal>
           <h2 className="services-heading">PUBLIC RELATION</h2>
+          </Reveal>
           <div className="public-card">
+            <Reveal>
             <div className="separaterow">
+              
               <div className="public-card-component glow-container">
 
                 <h1>01</h1>
@@ -32,7 +40,10 @@ export default function FourthPage() {
                 <h1>03</h1>
                 <h2>Media Buying</h2>
               </div>
+              
             </div>
+            </Reveal>
+            <Reveal>
             <div className="separaterow">
               <div className="public-card-component">
                 <h1>04</h1>
@@ -51,6 +62,7 @@ export default function FourthPage() {
                 <h2>Print & E-Magazines</h2>
               </div>
             </div>
+            </Reveal>
           </div>
 
 
@@ -59,11 +71,14 @@ export default function FourthPage() {
         <div className="marketing-service">
           <div className="absolute inset-0 -z-10">
         <GridBackgroundDemo />
+        
       </div>
+      <Reveal>
           <h1 className="marketing-heading">Marketing Services </h1>
           <GradientLine/>
+          </Reveal>
           <div className="public-card">
-            
+            <Reveal>
             <div className="separaterow marketrow">
               <div className="public-card-component">
 
@@ -75,8 +90,10 @@ export default function FourthPage() {
                 <h1>02</h1>
                 <h2>Search Engine optimization </h2>
               </div>
-              
+             
             </div>
+             </Reveal>
+             <Reveal>
             <div className="separaterow marketrow">
               <div className="public-card-component">
                 <h1>03</h1>
@@ -92,9 +109,11 @@ export default function FourthPage() {
               </div>
               
             </div>
+            </Reveal>
           </div>
         </div>
       </div>
+     
     </div>
      </>
   );

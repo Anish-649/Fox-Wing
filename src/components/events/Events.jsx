@@ -9,6 +9,7 @@ import event5 from "../../assets/event/event5.webp";
 import event13 from "../../assets/event/event13.jpg";
 import event7 from "../../assets/event/event7.webp";
 import event10 from "../../assets/event/event10.webp";
+import Reveal from "../../Reveal";
 
 export default function Event() {
 
@@ -33,7 +34,10 @@ export default function Event() {
     <div className='event'>
       
       {/* GALLERY */}
+      <Reveal>
       <h1 className="event-heading">Gallery</h1>
+      </Reveal>
+      <Reveal>
       <div className="cards-container">
         {galleryToShow.map((img, i) => (
           <div key={i} className={`hanger ${i % 2 === 0 ? "up" : "down"}`}>
@@ -51,10 +55,14 @@ export default function Event() {
           {showMoreGallery ? "(View Less)" : "(View More)"}
         </button>
       )}
-
+</Reveal>
       {/* AWARDS */}
+      <Reveal>
       <h1 className="event-heading">Awards</h1>
+      </Reveal>
+      <Reveal>
       <div className="cards-container">
+        
         {awardsToShow.map((img, i) => (
           <div key={i} className={`hanger ${i % 2 === 0 ? "up" : "down"}`}>
             <div className="dot"></div>
@@ -64,8 +72,9 @@ export default function Event() {
             </div>
           </div>
         ))}
+        
       </div>
-
+</Reveal>
       {isMobile && (
         <button className="view-more-btn" onClick={() => setShowMoreAwards(prev => !prev)}>
           {showMoreAwards ? "(View Less)" : "(View More)"}
