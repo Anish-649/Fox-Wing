@@ -13,15 +13,15 @@ export default function Hero() {
       <img className="hero-bg" src={bg_logo} alt="backgromund color" />
       <h1>
         {" "}
-        YOUR STRATEGY <br />
-        OUR STORY
+        YOUR STORY <br />
+        OUR STRATEGY
         <br />
         GLOBAL RECOGNITION
       </h1>
       <h3>Asia's First AI Powered PR Company</h3>
       <h2 style={{ fontWeight: "bold" }}>
         Give wings to your{" "}
-        <span style={{ fontWeight: "bold", color: "#E67335", opacity: "1" }}>
+        <span style={{ fontWeight: "bold", color: "#E67335~", opacity: "1" }}>
           {text}
         </span>
         <Cursor />
