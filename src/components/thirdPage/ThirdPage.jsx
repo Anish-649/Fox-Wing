@@ -4,7 +4,9 @@ import forbes from '../../assets/brand/Forbes_logo.png'
 import tedx from '../../assets/brand/TedX_logo.jpg'
 import midday from '../../assets/brand/mid-day.png'
 import Reveal from "../../Reveal"
-
+import menafn from "../../assets/brand/menafn-logo.jpeg"
+import outlook from "../../assets/brand/outlook-logo-vector.png";
+import abp from "../../assets/brand/abp-live.png";
 export default function ThirdPage() {
   return (
     <div className='thirdPage'>
@@ -19,9 +21,9 @@ export default function ThirdPage() {
         <Reveal>
         <div className="row">
           <div className="mediaBox">
-            <img className="menafn" src="https://www.plusinvestment.io/images/menafn-logo.jpeg" /></div>
+            <img className="menafn" src={menafn}/></div>
           <div className="mediaBox">
-            <img className="outlook" src="https://www.amity.edu/inbushera/assests/img/outlook.png" />
+            <img className="outlook" src={outlook} />
           </div>
           <div className="mediaBox">
             <img className="happen" src={forbes} />
@@ -34,7 +36,7 @@ export default function ThirdPage() {
             <img className="midday" src={midday} />
           </div>
           <div className="mediaBox">
-            <img className="abp" src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/abp-live.png" />
+            <img className="abp" src={abp} />
           </div>
           <div className="mediaBox">
             <img className="josh-talk" src={tedx} />
