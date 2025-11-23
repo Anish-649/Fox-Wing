@@ -5,7 +5,7 @@ import tedx from '../../assets/brand/TedX_logo.jpg'
 import midday from '../../assets/brand/mid-day.png'
 import Reveal from "../../Reveal"
 import menafn from "../../assets/brand/menafn-logo.jpeg"
-import outlook from "../../assets/brand/outlook-logo-vector.png";
+import outlook from "../../assets/brand/outloook.jpg";
 import abp from "../../assets/brand/abp-live.png";
 export default function ThirdPage() {
   return (
