@@ -51,7 +51,7 @@ export default function FourthPage() {
               </div>
               <div className="public-card-component">
                 <h1>05</h1>
-                <h2>Seeking Opportunities</h2>
+                <h2>Speaking Opportunities</h2>
               </div>
               <div className="public-card-component">
                 <h1>06</h1>
